@@ -1,0 +1,161 @@
+body {background: #ffffb3}
+
+
+#home:hover {
+    animation-name: wiggle;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite
+}
+@keyframes wiggle{
+    25%{transform: rotate(5deg);}
+    75%{transform: rotate(-5deg);}
+    100%{transform: rotate(0deg);}
+}
+nav {
+    padding: 7px 7px 7px;
+    font-size: 13px;
+    text-align: right;
+    background: #00bfff;
+   /transform: rotate(10deg);
+}
+nav div a {
+    font-size: 30px;
+    font-family: cursive;
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+}
+nav ul {
+  text-align: left;
+  display: inline;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+nav ul li, nav ul a {
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 7.5px 10px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+nav ul li:hover, nav ul a:hover {
+  background: #555;
+  color: #fff;
+}
+.parent:hover {
+  transform: translateY(-5px);
+  padding: 15px 25px; 
+}
+nav ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+nav ul li ul li { 
+  background: #555; 
+  display: block; 
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+nav ul li ul li:hover { background: #666; }
+nav ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+
+#mLINK, #a1LINK, #yLINK, #oLINK, #n1LINK, #n2LINK, #a2LINK, #iLINK, #sLINK, #eLINK {
+    /border: 3px solid green; 
+    /font-size: 75px;
+    position: relative;
+    top: 25vh;
+    z-index: 1;
+    text-align: center;
+    float: left;
+    left: 20vw;
+    flex-wrap: nowrap
+}
+#mLINK a, #a1LINK a, #yLINK a, #oLINK a, #n1LINK a, #n2LINK a, #a2LINK a, #iLINK a, #sLINK a, #eLINK a{
+    color: black;
+    text-decoration: none;
+    letter-spacing:4px;
+    font-family: cursive;
+    font-size: 10vw;
+}
+
+#mPIC, #a1PIC, #yPIC, #oPIC, #n1PIC, #n2PIC, #a2PIC, #iPIC, #sPIC, #ePIC {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
+    margin: 1px;
+    position: fixed;
+    bottom: 60vh;
+    text-align: center;
+    left: 40vw;
+}
+img {
+    max-width: none;
+    max-height: 25vh;
+    width: auto;
+    height: auto;
+    /border: 3px solid green;
+}
+
+#mLINK a:hover, #a1LINK a:hover, #yLINK a:hover, #oLINK a:hover, #n1LINK a:hover, #n2LINK a:hover, #a2LINK a:hover, #iLINK a:hover, #sLINK a:hover, #eLINK a:hover {
+    opacity: 1;
+    color: #00bfff;
+} 
+#mLINK:hover ~ #mPIC, #a1LINK:hover ~ #a1PIC, #yLINK:hover ~ #yPIC, #oLINK:hover ~ #oPIC, #n1LINK:hover ~ #n1PIC, #n2LINK:hover ~ #n2PIC, #a2LINK:hover ~ #a2PIC, #iLINK:hover ~ #iPIC, #sLINK:hover ~ #sPIC, #eLINK:hover ~ #ePIC {
+    opacity: 1;
+    visibility: visible;
+    animation-name: imghover;
+    animation-duration: 1s;
+    
+    
+}
+@keyframes imghover {
+    from {transform: translateY(10vh);}
+    to{transform: translateY(-vh);}
+}
+
+.today{
+    position: absolute; 
+    bottom: 60px;
+}
+
+
+
+#george{
+    color: red;
+    text-align: center;    
+}
